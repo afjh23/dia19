@@ -1,68 +1,148 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.p-megamenu{
+  width: 90%;
+  max-width: 1140px;
+  margin-inline: auto;
+  border: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+.p-megamenu-end{
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row;
+  gap:10px;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* SPLITER */
+.p-splitter{
+  width: 90%;
+  max-width: 1140px;
+  margin-inline: auto;
+  border: none;
+  height: 700px;
+  display: flex;
 }
 
-button {
+.p-splitter > div{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.p-splitter-gutter{
+  display: none;
+}
+
+
+
+/*  */
+.spliter-image {
+  margin: auto;
+}
+
+.p-galleria-item-container{
+  background-color: transparent;
+}
+
+
+.p-galleria-item-wrapper{
+  display: flex;
+  max-width: 430px;
+  max-height: 440px;
+
+}
+
+.p-galleria-thumbnail-container{
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+  max-width: 430px;
+}
+
+
+.p-galleria-thumbnail-wrapper{
+  width: 100%;
+}
+
+.p-galleria button{
+  width: 0px;
+  margin: 0px;
+}
+
+.p-galleria-item-wrapper{
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.p-galleria-thumbnail-items{
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+
+.p-galleria-thumbnail-items div{
+  width: 90px;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  overflow: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.p-price{
+ display: flex;
+ gap: 10px;
+}
+
+.current-price{
+  font-size: 1.4rem;
+}
+
+.p-price span{
+
+  font-weight: 700;
+}
+
+.p-tag.p-component{
+  background-color: #495057;
+}
+
+.p-add-cart{
+  margin: 2rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+ 
+
+}
+
+.quantity{
+  display: flex;
+  flex-direction: row;
+ width: 40px;
+}
+
+.quantity button
+{
+  width: 30px;
+  height: 30px;
+  font-weight: 700;
+  background-color: #f7f8fd;
+  color: #fead68;
+  border: none;
+}
+.quantity input{
+  display: flex;
+  background-color: #f7f8fd;
+  height: 30px;
+  text-align: center;
+  font-weight: 700;
+  width: 40px;
+  border: none;
+}
+
+.p-button-cart{
+  border: none;
+  background-color: #fead68;
+  font-weight: 700;
 }
